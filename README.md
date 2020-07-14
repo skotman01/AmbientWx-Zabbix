@@ -3,12 +3,12 @@ Python script to pull Ambient Weather API data into Zabbix. The Python script ca
 
 # Agent Setup
 1. Copy ZabbixWxDist.py to /usr/lib/zabbix/externalscripts on the machine running the Zabbix Agent
-2. Create file /etc/zabbix/zabbix_agentd.d/AmbientWx.conf containing the following line.
-2a. UserParameter=AmbientTemp.wx[*],/usr/lib/zabbix/externalscripts/ZabbixWxDist.py $1 $2 $3
-3. Restart the Zabbix Agent
-4. Import AmbientWx_ZabbixTemplate.xml into Zabbix
-5. Open Template with in Zabbix, modify the macros to be your own app and api keys.
-6. Apply template to host with script installed
+1. Create file /etc/zabbix/zabbix_agentd.d/AmbientWx.conf containing the following line.
+   1. UserParameter=AmbientTemp.wx[*],/usr/lib/zabbix/externalscripts/ZabbixWxDist.py $1 $2 $3
+1. Restart the Zabbix Agent
+1. Import AmbientWx_ZabbixTemplate.xml into Zabbix
+1. Open Template with in Zabbix, modify the macros to be your own app and api keys.
+1. Apply template to host with script installed
 
 ## Requirements
 * Zabbix Server
