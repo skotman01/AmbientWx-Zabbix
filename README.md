@@ -14,6 +14,7 @@ Python script to pull Ambient Weather API data into Zabbix. The Python script ca
 * Zabbix Server
 * Zabbix Agent
 * Ambient Weather API
+* Read/Write acess to /tmp as Zabbix user
 
 ## Tested With
 * Ambient Weather Station 2902a
