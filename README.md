@@ -21,3 +21,9 @@ Python script to pull Ambient Weather API data into Zabbix. The Python script ca
 * Ambient Weather API
 * Ubuntu 18.0.4
 * Python 3
+
+## Files Involved
+* /usr/lib/zabbix/externalscripts/ZabbixWxDist.py - Python script for querying API and printing data to Zabbix
+* /etc/zabbix/zabbix_agentd.d/AmbientWx.conf - Conf file to tell Zabbix Agent what to execute, this creates the key
+* AmbientWx_ZabbixTemplate.xml - Zabbix Template to be imported
+* /tmp/wxData.json - This file is created automatically, cached copy of json response from API, this is used to prevent throttling by Ambient Weather API. 
